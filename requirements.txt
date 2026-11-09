@@ -1,0 +1,11 @@
+langchain
+langchain-core
+langgraph
+langchain-google-genai
+langchain-mcp-adapters
+mcp>=1.28,<2
+python-dotenv
+pydantic
+pypdf
+pytest
+rich

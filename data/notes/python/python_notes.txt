@@ -1,0 +1,18 @@
+Python Functions
+
+A function is a reusable block of code that performs a specific task.
+
+Functions are defined using the def keyword.
+
+Example:
+
+def calculate_total(price, quantity):
+    return price * quantity
+
+Functions can accept parameters and return values.
+
+Advantages:
+1. Code reusability
+2. Better organization
+3. Easier debugging
+4. Reduced code duplication
