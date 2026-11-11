@@ -1,6 +1,5 @@
 from services.quiz_service import generate_mcq_quiz
 
-
 def main():
 
     quiz = generate_mcq_quiz(
