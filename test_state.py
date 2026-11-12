@@ -11,7 +11,6 @@ state: StudyAssistantState = {
     "num_questions": 5
 }
 
-print("========== STUDY ASSISTANT STATE ==========")
 
 for key, value in state.items():
     print(f"{key}: {value}")
