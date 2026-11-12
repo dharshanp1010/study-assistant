@@ -7,7 +7,7 @@ from services.quiz_service import (generate_mcq_quiz ,generate_descriptive_quiz)
 
 
 def qa_node(state: StudyAssistantState):
-# Check whether required inputs are available
+# Check inputs are available
     required_fields = ["subject", "question"]
 
     missing_fields = [
@@ -21,7 +21,6 @@ def qa_node(state: StudyAssistantState):
     # Create the existing QA chain
     qa_chain = create_qa_chain()
 
-    # Execute the chain , use intermediate if not mentioned
     answer = qa_chain.invoke({
         "level": state.get("level", "Intermediate"),
         "topic": state["subject"],
@@ -64,7 +63,7 @@ def summary_node(state: StudyAssistantState):
             "Unsupported file format. Use TXT, Markdown, or PDF."
         )
 
-    # Return the summary as a state update
+    # Return the summary 
     return {
         "response": summary
     }
